@@ -190,12 +190,6 @@ display: none;
   box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
 }
 
-.btn:hover{  
-  background-color: #a0a0a0;
-  color: #ffeba7;
-  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
-}
-
 #stars {
   width: 1px;
   height: 1px;
