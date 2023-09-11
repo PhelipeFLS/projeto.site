@@ -1,19 +1,44 @@
 .menu {
     list-style-type: none;
-    margin: 20px 0px 0px 0px;
-    padding: 0px 500px 0px 500px;
+    margin: 20px auto;
+    padding: 3px 5px;
     background-color: #333;
-    overflow: hidden;    
+    overflow: hidden; 
+    text-align: center;
+    font-size: 0;
+    width: 90%;
+    align-self: center;
+    border-radius: 8px;
 }
 
-.menu-item {
-    float: left;
+.menu-item,
+.menu-item-direita,
+.menu-item-esquerda {
+    display: inline-block;
     padding: 5px;
     background-color: #4e4d4d;
-    min-width: 30px
+    min-width: 100px;
+    font-size: 16px;
+    border-right: 1px solid #333;
 }
 
-.menu-item a {
+.menu-item:last-child,
+.menu-item-direita:last-child,
+.menu-item-esquerda:last-child {
+    border-right: none;
+}
+
+.menu-item-direita {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.menu-item-esquerda {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.menu-item a,
+.menu-item-direita a,
+.menu-item-esquerda a{
     display: inline-block;
     color: white;
     text-align: center;
@@ -21,8 +46,11 @@
     text-decoration: none;
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item-direita a:hover,
+.menu-item-esquerda a:hover{
     background-color: #555;
+    border-radius: 15px;
 }
 
 body {
@@ -30,15 +58,16 @@ body {
     margin: 0;
     padding: 0;
     background-color: #1c1c1c;
+    text-align: center;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-flow: dense;
+    -ms-grid-column-align: center;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
