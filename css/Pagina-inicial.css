@@ -1,0 +1,116 @@
+.menu {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 3px 5px;
+    background-color: #333;
+    overflow: hidden; 
+    text-align: center;
+    font-size: 0;
+    width: 90%;
+    align-self: center;
+    border-radius: 8px;
+}
+
+.foguete-esquerda{
+    height: 50px;
+    padding: 5px 20% 5px 0px;
+    vertical-align: bottom;
+    
+    
+}
+.foguete-direita{
+    height: 50px;
+    padding: 5px 0px 5px 20%;
+    vertical-align: bottom;
+    
+}
+
+.menu-item,
+.menu-item-direita,
+.menu-item-esquerda {
+    display: inline-block;
+    padding: 5px;
+    min-width: 100px;
+    font-size: 16px;
+    border-right: 1px solid #333;
+}
+
+.menu-item:last-child,
+.menu-item-direita:last-child,
+.menu-item-esquerda:last-child {
+    border-right: none;
+}
+
+.menu-item-direita {
+    border-radius: 0px 15px 15px 0px;
+}
+
+.menu-item-esquerda {
+    border-radius: 15px 0px 0px 15px;
+    
+}
+
+.menu-item a,
+.menu-item-direita a,
+.menu-item-esquerda a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item a:hover,
+.menu-item-direita a:hover,
+.menu-item-esquerda a:hover{
+    background-color: #555;
+    border-radius: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://marketplace.canva.com/EAFYIWPCudg/1/0/1600w/canva-papel-de-parede-para-computador-astronauta-gal%C3%A1xia-preto-e-branco-lKp1cXK1ybY.jpg);
+    background-size: cover;
+    
+    text-align: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    -ms-grid-column-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+
+.item {
+    background-color: #4e4d4d;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.pulo{
+    height: 80px;
+}
+.rodape-fixado {
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px #333;
+}
