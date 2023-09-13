@@ -80,9 +80,15 @@ body {
 .contato{
     height: 50px;
     vertical-align: bottom;
-    
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px;
+    transition: transform 0.5s;
 }
 
+.contato:hover{
+    transform: scale(1.2);
+}
 
 /* .container {
     max-width: 80%;
@@ -101,6 +107,7 @@ body {
     text-align: center;
     border-radius: 8px;
     color: rgb(255, 255, 255);
+    display: inline-block;
 }
 
 @media (max-width: 768px) {
