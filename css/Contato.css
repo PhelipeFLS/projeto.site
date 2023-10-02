@@ -15,14 +15,20 @@
     height: 50px;
     padding: 5px 20% 5px 0px;
     vertical-align: bottom;
-    
-    
+    transition: 2s;    
 }
 .foguete-direita{
     height: 50px;
     padding: 5px 0px 5px 20%;
     vertical-align: bottom;
-    
+    transition: 2s;
+}
+
+.foguete-direita:hover{
+    scale: 1.2;
+}
+.foguete-esquerda:hover{
+    scale: 1.2;
 }
 
 .menu-item,
@@ -124,7 +130,7 @@ body {
   }
 
 .pulo{
-    height: 80px;
+    height: 200px;
 }
 .rodape-fixado {
     padding: 10px 0;
