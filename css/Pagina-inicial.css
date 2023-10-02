@@ -83,7 +83,6 @@ body {
     padding: 20px;
     display: grid;
     -ms-grid-column-align: center;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
 }
 
